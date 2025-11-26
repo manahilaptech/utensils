@@ -1,0 +1,217 @@
+/* ========== Global Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ========== Body & Background ========== */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #fdfaf6 0%, #f8f1e9 100%);
+    color: #4b2e2e;
+    padding: 20px;
+  }
+
+  .header-bg {
+    background-image: url('bg2.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+  }
+  
+  /* ========== Page Title Section ========== */
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #4b2e2e;
+    border-bottom: 2px dashed #d2b48c;
+    padding-bottom: 10px;
+  }
+  
+  /* ========== Product Card Styling ========== */
+  .product-card {
+    background-color: #fff8f1;
+    border: 1px solid #d2b48c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(91, 56, 28, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(91, 56, 28, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e5cbaa;
+    cursor: pointer;
+  }
+  
+  /* ========== Modal Styling ========== */
+  .modal-content {
+    background-color: #fff6ed;
+    border: 2px solid #c49b7a;
+    border-radius: 12px;
+  }
+  
+  .modal-header, .modal-footer {
+    background-color: #f5e3d8;
+    border-bottom: 1px solid #d2b48c;
+  }
+  
+  .modal-title {
+    color: #4b2e2e;
+  }
+  
+  /* ========== Add to Cart Button ========== */
+  .add-to-cart-btn {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #a76c47;
+  }
+  
+  /* ========== Cart Icon / Panel ========== */
+  .cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff8f1;
+    color: #5a3e36;
+    border: 1px solid #d2b48c;
+    border-radius: 10px;
+    padding: 15px;
+    width: 240px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .cart-icon h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #6b4226;
+  }
+  
+  #cart-list li {
+    padding: 4px 0;
+    border-bottom: 1px dashed #d2b48c;
+    font-size: 0.95rem;
+  }
+  
+  #cart-count {
+    font-weight: bold;
+    margin-left: 5px;
+    color: #a0522d;
+  }
+  
+  /* ========== Footer Styling (Optional) ========== */
+  footer {
+    background-color: #f3e5d5;
+    padding: 20px 0;
+    text-align: center;
+    color: #5e3d2b;
+    margin-top: 50px;
+    border-top: 2px solid #d2b48c;
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 768px) {
+    .product-card {
+      margin-bottom: 25px;
+    }
+    
+    .cart-icon {
+      width: 90%;
+      right: 5%;
+      top: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 150px;
+    perspective: 1000px;
+    margin: 20px 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #4b2e2e;
+  }
+  
+  .flip-card-front {
+    background-color: #fff3e6;
+    border: 1px solid #d2b48c;
+  }
+  
+  .flip-card-back {
+    background-color: #f5e2ce;
+    transform: rotateY(180deg);
+    border: 1px solid #d2b48c;
+  }
+
+
+  .offer-banner {
+    background-color: #fff0e1;
+    padding: 20px;
+    border: 2px dashed #a0522d;
+    border-radius: 10px;
+    color: #5a3e36;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }

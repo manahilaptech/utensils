@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Utensil Specifications</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styling/feature.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.jpg" alt="Logo" class="logo-img me-2" />
+        Shine Utensils
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="product1.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="offerf.html">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html">features</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact US</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">feedback page</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Comparision</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="header-bg text-white text-center py-4">
+    <h1 class="display-5">Utensil Specifications</h1>
+    <p class="lead">Click on any utensil to view full details.</p>
+  </header>
+
+
+
+<div class="offer-banner my-4 text-center">
+    <h2 class="mb-2">🔥 Flash Sale: 25% OFF on Premium Cookware!</h2>
+    <p>Hurry up! Offer ends in <span id="countdown">00:10:00</span></p>
+  </div>
+
+
+
+<div class="container mb-5">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>100% Food Safe</h4>
+            </div>
+            <div class="flip-card-back">
+              <p>Certified food-grade materials with no harmful chemicals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>Induction Friendly</h4>
+            </div>
+            <div class="flip-card-back">
+              <p>All products support gas and induction stoves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">🔍 Utensil Specifications</h2>
+    <div class="row g-4">
+      
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product1Modal">
+          <img src="images/product1.jpg" alt="Utensil 1" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Stainless Steel Kadhai</h5>
+        </div>
+      </div>
+  
+      <!-- Repeat same structure for Products 2 to 10 with unique IDs/images -->
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product2Modal">
+          <img src="images/product3.jpg" alt="Utensil 2" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Non-stick Frying Pan</h5>
+        </div>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product3Modal">
+          <img src="images/product32.jpg" alt="Utensil 3" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Copper Handi</h5>
+        </div>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product4Modal">
+          <img src="images/product20.jpg" alt="Utensil 4" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Tawa (Induction Base)</h5>
+        </div>
+      </div>
+  
+      <!-- Product 5 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product5Modal">
+          <img src="images/product4.jpg" alt="Utensil 5" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Stainless Steel Pressure Cooker</h5>
+        </div>
+      </div>
+
+
+  
+      <!-- Product 6 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product6Modal">
+          <img src="images/p4.jpg" alt="Utensil 6" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Ceramic Bowl Set</h5>
+        </div>
+      </div>
+  
+      <!-- Product 7 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product7Modal">
+          <img src="images/glass.jpg" alt="Utensil 7" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Glass Storage Jar</h5>
+        </div>
+      </div>
+  
+      <!-- Product 8 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product8Modal">
+          <img src="images/product34.jpg" alt="Utensil 8" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Aluminum Saucepan</h5>
+        </div>
+      </div>
+  
+      <!-- Product 9 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product9Modal">
+          <img src="images/product35.jpg" alt="Utensil 9" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Cast Iron Tandoor</h5>
+        </div>
+      </div>
+  
+      <!-- Product 10 -->
+      <div class="col-md-4">
+        <div class="spec-card" data-bs-toggle="modal" data-bs-target="#product10Modal">
+          <img src="images/p3.jpg" alt="Utensil 10" class="img-fluid rounded hover-zoom" />
+          <h5 class="text-center mt-2">Premium Cookware Set</h5>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+
+<!-- Modal Template -->
+<!-- Product 1 Modal -->
+<div class="modal fade" id="product1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Stainless Steel Kadhai</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Stainless Steel</li>
+            <li><strong>Size:</strong> 28cm diameter</li>
+            <li><strong>Weight:</strong> 1.2kg</li>
+            <li><strong>Usage:</strong> Gas & Induction Compatible</li>
+            <li><strong>Durability:</strong> 10+ years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="Stainless Steel Kadai">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 2 Modal -->
+  <div class="modal fade" id="product2Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Non-stick Frying Pan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Non-stick coated aluminum</li>
+            <li><strong>Size:</strong> 24cm diameter</li>
+            <li><strong>Weight:</strong> 950g</li>
+            <li><strong>Usage:</strong> Gas stove compatible</li>
+            <li><strong>Durability:</strong> 3–5 years</li>
+          </ul>
+          <button class="btn btn-success add-to-cart-btn" data-item=" non-stick Pan">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 3 Modal -->
+  <div class="modal fade" id="product3Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Copper Handi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Pure Copper with tin lining</li>
+            <li><strong>Size:</strong> 1.5 L</li>
+            <li><strong>Weight:</strong> 1.3kg</li>
+            <li><strong>Usage:</strong> Traditional cooking, gas only</li>
+            <li><strong>Durability:</strong> 10+ years with regular polishing</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="pure copper with tin lining">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 4 Modal -->
+  <div class="modal fade" id="product4Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Tawa (Induction Base)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Hard anodized aluminum</li>
+            <li><strong>Size:</strong> 30cm</li>
+            <li><strong>Weight:</strong> 900g</li>
+            <li><strong>Usage:</strong> Gas & Induction compatible</li>
+            <li><strong>Durability:</strong> 7–10 years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="tawa">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 5 Modal -->
+  <div class="modal fade" id="product5Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Stainless Steel Pressure Cooker</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Stainless Steel</li>
+            <li><strong>Size:</strong> 5 Litres</li>
+            <li><strong>Weight:</strong> 2.1kg</li>
+            <li><strong>Usage:</strong> Gas & Induction</li>
+            <li><strong>Durability:</strong> 15 years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="pressure cooker">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 6 Modal -->
+  <div class="modal fade" id="product6Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Ceramic Bowl Set</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Glazed Ceramic</li>
+            <li><strong>Size:</strong> 6 bowls (300ml each)</li>
+            <li><strong>Weight:</strong> 1.8kg total</li>
+            <li><strong>Usage:</strong> Microwave & Dishwasher safe</li>
+            <li><strong>Durability:</strong> 5 years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="ceramic bowl set">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 7 Modal -->
+  <div class="modal fade" id="product7Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Glass Storage Jar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Borosilicate Glass</li>
+            <li><strong>Size:</strong> 1.2L</li>
+            <li><strong>Weight:</strong> 500g</li>
+            <li><strong>Usage:</strong> Airtight dry storage</li>
+            <li><strong>Durability:</strong> 10 years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="glass storage jar">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 8 Modal -->
+  <div class="modal fade" id="product8Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Aluminum Saucepan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Food-grade aluminum</li>
+            <li><strong>Size:</strong> 2 Litres</li>
+            <li><strong>Weight:</strong> 950g</li>
+            <li><strong>Usage:</strong> Gas & Electric stove</li>
+            <li><strong>Durability:</strong> 5–7 years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item=" Aluminium Saucepan">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 9 Modal -->
+  <div class="modal fade" id="product9Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Cast Iron Tandoor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Pre-seasoned Cast Iron</li>
+            <li><strong>Size:</strong> 10 inch</li>
+            <li><strong>Weight:</strong> 3.5kg</li>
+            <li><strong>Usage:</strong> Gas compatible only</li>
+            <li><strong>Durability:</strong> Lifetime</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="cast iron tandoor">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product 10 Modal -->
+  <div class="modal fade" id="product10Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Premium Cookware Set</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Material:</strong> Multi-layer Stainless Steel</li>
+            <li><strong>Size:</strong> 5-piece set</li>
+            <li><strong>Weight:</strong> 4kg total</li>
+            <li><strong>Usage:</strong> All cooktops including induction</li>
+            <li><strong>Durability:</strong> 15+ years</li>
+          </ul>
+          <!-- <button class="btn btn-success mt-3"><i class="fas fa-cart-plus me-1"></i> Add to Cart</button> -->
+          <button class="btn btn-success add-to-cart-btn" data-item="premier cookwear set">
+            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="cart-icon position-fixed top-0 end-0 m-3 bg-light p-2 rounded shadow">
+  <i class="fas fa-shopping-cart fa-lg"></i>
+  <span id="cart-count">0</span>
+  <ul id="cart-list" class="mt-2 list-unstyled small"></ul>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  &copy; 2025 Shine Utensils. All rights reserved.
+</footer>
+
+<script>
+    let timeLeft = 600;
+    const countdownEl = document.getElementById("countdown");
+    
+    function updateCountdown() {
+      let minutes = Math.floor(timeLeft / 60);
+      let seconds = timeLeft % 60;
+      countdownEl.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      if (timeLeft > 0) timeLeft--;
+    }
+    setInterval(updateCountdown, 1000);
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>

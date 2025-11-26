@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Utensil Comparison</title>
+  <link rel="stylesheet" href="styling/compare.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="Shine Utensils Logo">
+    <span>Shine Utensils</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="product1.html">PRODUCTS</a></li>
+    <li><a href="offerf.html">OFFERS</a></li>
+    <li><a href="features.html">FEATURES</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+    <li><a href="aboutus.html">ABOUT US</a></li>
+    <li><a href="feedback.html">FEEDBACK</a></li>
+    <li><a href="compare.html">COMPARISON</a></li>
+  </ul>
+</nav>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>Compare Utensils by Material</h1>
+    <p>Choose from a variety of materials and see what fits your kitchen best!</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="dropdown-section">
+      <label for="utensilCategory">Choose Category:</label>
+      <select id="utensilCategory" onchange="loadUtensils(this.value)">
+        <option value="">-- Select Category --</option>
+        <option value="fryingpans">Frying Pans</option>
+        <option value="saucepans">Sauce Pans</option>
+        <option value="pressurecookers">Pressure Cookers</option>
+      </select>
+    </section>
+
+    <section class="grid-container" id="productGrid"></section>
+
+    <div class="compare-btn-container">
+      <button onclick="compareSelected()">Compare Selected</button>
+    </div>
+
+    <section id="comparisonTable" class="comparison-table"></section>
+
+    <div class="container">
+      <h1>Smart Utensil Showcase</h1>
+      <p class="intro-text">Click the image below to explore different versions!</p>
+      <div class="image-box" onclick="switchImage()">
+        <img id="mainImage" src="https://via.placeholder.com/300x200.png?text=Steel+Pan" alt="Utensil">
+      </div>
+      <p class="description" id="desc">Stainless Steel Pan – Durable and all-purpose.</p>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    &copy; 2025 Shine Utensils | Crafted with Care
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
